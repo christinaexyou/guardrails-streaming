@@ -4,6 +4,9 @@ Since vLLM supports streaming chat completions, you can configure Guardrails to 
 ## Configuration
 To activate streaming on guardrails, add `"stream": true` to the payload sent to the `v1/chat/completions` endpoint of the guardrails gateway:
 
+## Setup
+This demo is a proof of concept based on the pre-existing [TrustyAI Lemonade Stand](https://github.com/trustyai-explainability/trustyai-llm-demo/tree/main/lemonade-stand-demo/guardrails) demo. It utilizes an experimental [vLLM Orchestrator Gateway](https://github.com/trustyai-explainability/vllm-orchestrator-gateway) image that enables streaming chat completions. The following [Usage](#usage) section shows example queries for streaming chat completions using the default `whole_doc_chunker` and the experimental [`sentence` chunker](https://github.com/m-misiura/guardrails-chunkers).
+
 ## Usage
 
 ## "Is orange juice good?"
